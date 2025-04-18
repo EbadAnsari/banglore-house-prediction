@@ -3,6 +3,11 @@ import util
 
 app = Flask(__name__)
 
+
+@app.route('/', methods=['GET'])
+def helloworld(): 
+    return jsonify({"data": "Hello World"})
+
 @app.route('/api/get_location_names', methods=['GET'])
 def get_location_names():
     response = jsonify({
