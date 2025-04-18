@@ -1,6 +1,5 @@
 import pickle
 import json
-import numpy as np
 from sklearn.linear_model._base import LinearRegression
 from sklearn.preprocessing import LabelEncoder
 
